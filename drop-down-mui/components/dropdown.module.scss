@@ -1,0 +1,49 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    
+
+}
+.dropdown {
+    width: 80%;
+
+    
+}
+
+
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+}
+
+.monday {
+    background-color: #ffcccc;
+    color: #990000;
+}
+.tuesday {
+    background-color: #ccffcc;
+    color: #009900;
+}
+.wednesday {
+    background-color: #ccccff;
+    color: #000099;
+}
+.thursday {
+    background-color: #ffffcc;
+    color: #999900;
+}
+.friday {
+    background-color: #ffccff;
+    color: #990099;
+}
+.saturday {
+    background-color: #ccffff;
+    color: #009999;
+}
+.sunday {
+    background-color: #ffcc99;
+    color: #994400;
+}

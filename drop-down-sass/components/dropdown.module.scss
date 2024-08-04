@@ -1,0 +1,263 @@
+// .dropdown {
+//     margin: 100px;
+
+//     .customSelect {
+//         position: relative;
+//         width: 200px;
+//         padding: 5px;
+//         font-size: 16px;
+//         cursor: pointer;
+//         // user-select: none;
+//         border: 1px solid #ccc;
+//         border-radius: 4px;
+
+//         &:after {
+//             content: '\25BC';
+//             position: absolute;
+//             right: 10px;
+//             top: 50%;
+//             transform: translateY(-50%);
+//         }
+
+//         .options {
+//             display: none;
+//             position: absolute;
+//             top: 100%;
+//             left: 0;
+//             width: 100%;
+//             border: 1px solid #ccc;
+//             border-radius: 4px;
+//             background-color: #fff;
+//             z-index: 1;
+
+//             &.open {
+//                 display: block;
+//             }
+
+//             .option {
+//                 padding: 10px;
+//                 cursor: pointer;
+//                 &:hover {
+//                     background-color: #f0f0f0;
+//                 }
+
+//                 &.monday {
+//                     background-color: #ffcccc;
+//                     color: #990000;
+//                 }
+//                 &.tuesday {
+//                     background-color: #ccffcc;
+//                     color: #009900;
+//                 }
+//                 &.wednesday {
+//                     background-color: #ccccff;
+//                     color: #000099;
+//                 }
+//                 &.thursday {
+//                     background-color: #ffffcc;
+//                     color: #999900;
+//                 }
+//                 &.friday {
+//                     background-color: #ffccff;
+//                     color: #990099;
+//                 }
+//                 &.saturday {
+//                     background-color: #ccffff;
+//                     color: #009999;
+//                 }
+//                 &.sunday {
+//                     background-color: #ffcc99;
+//                     color: #994400;
+//                 }
+//             }
+//         }
+//     }
+
+//     .selectedDays {
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin-bottom: 10px;
+
+//         .day {
+//             position: relative;
+//             margin-right: 10px;
+//             padding: 5px 10px;
+//             border-radius: 4px;
+//             color: white;
+//             font-weight: bold;
+//             display: flex;
+//             align-items: center;
+
+//             .closeIcon {
+//                 margin-left: 5px;
+//                 cursor: pointer;
+//                 font-size: 16px;
+//                 line-height: 1;
+//                 color: #000;
+//             }
+
+//             &.monday {
+//                 background-color: #ffcccc;
+//                 color: #990000;
+//             }
+//             &.tuesday {
+//                 background-color: #ccffcc;
+//                 color: #009900;
+//             }
+//             &.wednesday {
+//                 background-color: #ccccff;
+//                 color: #000099;
+//             }
+//             &.thursday {
+//                 background-color: #ffffcc;
+//                 color: #999900;
+//             }
+//             &.friday {
+//                 background-color: #ffccff;
+//                 color: #990099;
+//             }
+//             &.saturday {
+//                 background-color: #ccffff;
+//                 color: #009999;
+//             }
+//             &.sunday {
+//                 background-color: #ffcc99;
+//                 color: #994400;
+//             }
+//         }
+//     }
+// }
+
+
+
+.dropdown {
+    margin: 100px;
+
+    .customSelect {
+        position: relative;
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+       
+
+        &:after {
+            content: '\25BC';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .options {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            z-index: 1;
+
+            &.open {
+                display: block;
+            }
+
+            .option {
+                padding: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #f0f0f0;
+                }
+
+                &.monday {
+                    background-color: #ffcccc;
+                    color: #990000;
+                }
+                &.tuesday {
+                    background-color: #ccffcc;
+                    color: #009900;
+                }
+                &.wednesday {
+                    background-color: #ccccff;
+                    color: #000099;
+                }
+                &.thursday {
+                    background-color: #ffffcc;
+                    color: #999900;
+                }
+                &.friday {
+                    background-color: #ffccff;
+                    color: #990099;
+                }
+                &.saturday {
+                    background-color: #ccffff;
+                    color: #009999;
+                }
+                &.sunday {
+                    background-color: #ffcc99;
+                    color: #994400;
+                }
+            }
+        }
+    }
+
+    .selectedDays {
+        display: flex;
+        flex-wrap: nowrap; // Prevent wrapping to a new line
+        overflow-x: auto; // Allow horizontal scrolling if needed
+        margin-top: 10px;
+
+        .day {
+            position: relative;
+            margin-right: 10px; // Space between days
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+            .closeIcon {
+                margin-left: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 1;
+                color: #000;
+            }
+
+            &.monday {
+                background-color: #ffcccc;
+                color: #990000;
+            }
+            &.tuesday {
+                background-color: #ccffcc;
+                color: #009900;
+            }
+            &.wednesday {
+                background-color: #ccccff;
+                color: #000099;
+            }
+            &.thursday {
+                background-color: #ffffcc;
+                color: #999900;
+            }
+            &.friday {
+                background-color: #ffccff;
+                color: #990099;
+            }
+            &.saturday {
+                background-color: #ccffff;
+                color: #009999;
+            }
+            &.sunday {
+                background-color: #ffcc99;
+                color: #994400;
+            }
+        }
+    }
+}
+
